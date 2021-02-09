@@ -40,7 +40,6 @@ collections_dir: collections_dir
 collections:
   books:
     output: true
-    permalink: '/books/:name/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
