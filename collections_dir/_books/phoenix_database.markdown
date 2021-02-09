@@ -1,6 +1,5 @@
 ---
 layout: book
-date: 2021-02-07
 title: Phoenix Database
 title_id: phoenix_database
 release_date: 2021-02-07
