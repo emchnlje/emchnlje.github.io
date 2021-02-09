@@ -28,7 +28,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 #url: "https://erchnichols.com" # the base hostname & protocol for your site, e.g. http://example.com
 url: "https://emchnlje.github.io/"
 #twitter_username: jekyllrb
-github_username:  modderwizard
+github_username: emchnlje
 
 # Build settings
 theme: minima
@@ -40,6 +40,10 @@ collections_dir: collections_dir
 collections:
   books:
     output: true
+    permalink: /books/:name/
+  book:
+    output: true
+    permalink: /book/:name/
 
 # Exclude from processing.
 # The following items will not be processed, by default.
