@@ -25,9 +25,10 @@ description: >- # this means to ignore newlines until "baseurl:"
   line in _config.yml. It will appear in your document head meta (for
   Google search results) and in your feed.xml site description.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://erchnichols.com" # the base hostname & protocol for your site, e.g. http://example.com
+#url: "https://erchnichols.com" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://emchnlje.github.io/"
 #twitter_username: jekyllrb
-github_username:  jekyll
+github_username:  modderwizard
 
 # Build settings
 theme: minima
@@ -37,8 +38,9 @@ plugins:
 # Collections
 collections_dir: collections_dir
 collections:
-    books:
-        output: true
+  books:
+    output: true
+    permalink: '/books/:title_id/'
 
 # Exclude from processing.
 # The following items will not be processed, by default.
