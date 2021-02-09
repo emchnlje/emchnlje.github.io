@@ -1,5 +1,7 @@
 {% for book in site.books %}
-	<p>test {{ book.id }}</p>
+	<p>{{ book.id }}</p>&nbsp;&nbsp;&nbsp;
+	<p>{{ book.title_id }}</p>&nbsp;&nbsp;&nbsp;
+	<p>{{ book.title }}</p>&nbsp;&nbsp;&nbsp;
 	{% if book.title_id == book_id %}
 		{% assign the_book = book %}
 	{% endif %}
