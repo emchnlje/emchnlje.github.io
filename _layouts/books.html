@@ -1,0 +1,15 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<p class="page-heading">Books</p>
+
+<div class="mini-books-container">
+	{% assign books = site.books | reverse %}
+	{% for book in books %}
+		{% assign book_id = book.title_id %}
+		{%- include element_mini_book.html -%}
+	{% endfor %}
+</div>

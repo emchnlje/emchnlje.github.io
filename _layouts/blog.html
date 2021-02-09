@@ -1,0 +1,32 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<div class="blog-main-container">
+	<!-- Left side content -->
+	<div class="blog-main-left">
+		<p class="page-heading page-heading-left">Recent Posts</p>
+
+		<!-- Blog entries -->
+		<div class="blog-entries-container">
+			{% assign hasPosts = false %}
+			{% for post in site.posts limit:5 %}
+				{% assign hasPosts = true %}
+				{%- include element_blog_post.html -%}
+			{% endfor %}
+
+			{% if hasPosts == false %}
+				<div class="blog-entry">
+					<p class="blog-entry-title">No posts found.</p>
+				</div>
+			{% endif %}
+		</div>
+	</div>
+
+	<!-- Right side content -->
+	<div class="blog-main-right">
+		<p class="page-heading page-heading-right"><a href="/blog/archive/">Archive</a></p>
+	</div>
+</div>

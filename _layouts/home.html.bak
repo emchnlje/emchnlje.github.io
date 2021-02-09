@@ -1,0 +1,10 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<p class="page-heading">Upcoming Release</p>
+
+{% assign book_id = "phoenix_database" %}
+{%- include element_book.html -%}

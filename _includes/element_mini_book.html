@@ -1,0 +1,10 @@
+{% for book in site.books %}
+	{% if book.title_id == book_id %}
+		{% assign the_book = book %}
+	{% endif %}
+{% endfor %}
+
+<div class="mini-book">
+	<img class="mini-book-image" src="/assets/images/books/{{ the_book.title_id }}/cover_art.png" onerror="this.src = '/assets/images/books/cover_art_default.png';">
+	<p class="mini-book-title"><a class="mini-book-title-link" href="{{ the_book.url }}">{{ the_book.title }}</a></p>
+</div>

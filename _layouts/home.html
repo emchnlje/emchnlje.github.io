@@ -1,0 +1,21 @@
+---
+layout: default
+---
+
+{{ content }}
+
+{% assign book_id = "phoenix_database" %}
+
+<div class="content-row-1">
+	<div class="featured-book-container">
+		<p class="page-heading">Upcoming Release</p>
+		{%- include element_mini_book.html -%}
+	</div>
+	<div class="flex-filler"></div>
+	<div class="latest-blog-container">
+		<p class="page-heading">Latest Blog Posts <a class="blog-archive-link" href="/blog/archive">(view archive)</a></p>
+		{% for post in site.posts limit:3 %}
+			{%- include element_blog_post.html -%}
+		{% endfor %}
+	</div>
+</div>

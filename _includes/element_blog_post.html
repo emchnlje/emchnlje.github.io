@@ -1,0 +1,19 @@
+<div class="blog-entry">
+	<div class="blog-entry-image-container">
+		{% assign post_id = post.id | replace: "/", "-" %}
+		<img class="blog-entry-image" src="/assets/images/blog/preview/{{ post_id }}.png" onerror="this.src = '/assets/images/blog/preview/default.png';">
+	</div>
+	<div class="blog-entry-text-container">
+		<p class="blog-entry-title"><a href="{{ post.url }}">{{ post.title }}</a><!-- by {{ post.author }}--></p>
+		<p class="blog-entry-date">
+			{{ post.author }}
+			·&nbsp;
+			{%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+			{{ post.date | date: date_format }}
+		</p>
+		<p class="blog-entry-preview">
+			{{ post.content | strip_html | truncate: 200 }}
+			<a class="blog-entry-read-more" href="{{ post.url }}">(read&nbsp;more)</a>
+		</p>
+	</div>
+</div>

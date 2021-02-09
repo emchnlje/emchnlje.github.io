@@ -1,0 +1,48 @@
+.bio-container
+{
+    display: flex;
+
+    margin-top: 4em;
+    padding: 2em;
+
+    /*background-color: var(--body-card-background);
+    border: 1px solid var(--outline-color);*/
+}
+
+.bio-text-container
+{
+    flex: 1;
+    
+    padding-left: 4em;
+}
+
+.bio-text
+{
+    margin-top: 2em;
+
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 32px;
+
+    color: var(--body-text-subtle);
+}
+
+.bio-image-container
+{
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.bio-image
+{
+    align-self: center;
+
+    height: 35em;
+
+    box-shadow: 0 0 4px 2px var(--shadow-color);
+}
+
+.page-heading
+{
+    margin-top: 0;
+}

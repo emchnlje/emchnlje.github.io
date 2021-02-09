@@ -1,0 +1,43 @@
+@import "page_blog.css";
+
+.content-row-1
+{
+	display: flex;
+
+	margin-top: 4em;
+}
+
+.page-heading
+{
+	margin-top: 0;
+}
+
+.flex-filler
+{
+	flex-grow: 1;
+}
+
+.blog-entry-preview
+{
+	font-size: 1rem;
+}
+
+.featured-book-container
+{
+	width: 30%;
+}
+
+.latest-blog-container
+{
+	width: 60%;
+}
+
+.latest-blog-container .page-heading
+{
+	text-align: left;
+}
+
+.blog-archive-link
+{
+	font-size: 14px;
+}

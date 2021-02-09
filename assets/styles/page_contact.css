@@ -1,0 +1,9 @@
+.contact-container
+{
+    background-color: var(--body-card-background);
+
+    padding: 10em 0;
+
+    font-size: x-large;
+    text-align: center;
+}

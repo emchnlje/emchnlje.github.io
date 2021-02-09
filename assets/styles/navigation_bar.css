@@ -1,0 +1,52 @@
+.force-underline
+{
+    text-decoration: underline;
+    text-decoration-color: var(--navbar-link);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 8px;
+}
+
+.navbar-logo
+{
+    height: 4em;
+}
+
+.navbar
+{
+    background-color: var(--navbar-background) !important;
+    /*border-bottom: 1px solid var(--outline-color);*/
+    box-shadow: 0 0 4px 2px var(--shadow-color);
+}
+
+.navbar .container
+{
+    max-width: 1200px;
+}
+
+.nav-link
+{
+    margin: 0 1em;
+
+    font-size: large;
+    font-weight: 400;
+
+    color: var(--navbar-link) !important;
+}
+
+.nav-link:hover
+{
+    color: var(--navbar-link-hover) !important;
+}
+
+.social-link
+{
+    margin: 0;
+}
+
+#nav-logo
+{
+    margin-left: 1em;
+
+    width: auto;
+    max-height: 2em;
+}

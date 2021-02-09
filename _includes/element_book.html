@@ -1,0 +1,36 @@
+{% for book in site.books %}
+	{% if book.title_id == book_id %}
+		{% assign the_book = book %}
+	{% endif %}
+{% endfor %}
+
+<div class="book-container">
+	<div class="book-image-container">
+		<div class="book-image-box">
+			<img class="book-image" src="/assets/images/books/{{ the_book.title_id }}/cover_art.png" onerror="this.src = '/assets/images/books/cover_art_default.png';">
+		</div>
+	</div>
+	
+	<div class="book-text-container">
+		<p class="book-title">{{ the_book.title }}</p>
+
+		{% if the_book.subtitle %}
+			<p class="book-series">{{ the_book.subtitle }}</p>
+		{% endif %}
+
+		{%- assign date_format = site.minima.date_format | default: "%B %-d, %Y" -%}
+		<p class="book-date">Release Date: {{ the_book.release_date | date: date_format }}</p>
+
+		<p></p>
+
+		<div class="book-text-separator"></div>
+		
+		{% for book_description_paragraph in the_book.description %}
+			<p class="book-description">{{ book_description_paragraph }}</p>
+		{% endfor %}
+
+		<div class="book-text-separator"></div>
+		
+		<a class="book-link" href="{{ the_book.link_temp }}" target="_blank">[ Purchase on Amazon ]</a>
+	</div>
+</div>

@@ -1,0 +1,87 @@
+@import "blog_post.css";
+@import "books.css";
+@import "footer.css";
+@import "navigation_bar.css";
+
+:root
+{
+    --body-background: #F6F6F6;
+    --body-card-background: #FFFFFF;
+    --body-text: #000000;
+    --body-text-subtle: #444444;
+    --body-text-light: #777777;
+
+    --body-link: #C58C38;
+
+    --link: #666666;
+    --link-hover: #000000;
+
+    --navbar-background: #594F3C;
+    --navbar-link: #DDDDDD;
+    --navbar-link-hover: #FFFFFF;
+
+    --footer-background: #F6F6F6;
+    --footer-text: #777777;
+
+    --shadow-color: rgba(0, 0, 0, 0.5);
+    --outline-color: rgba(0, 0, 0, 0.1);
+}
+
+[data-theme="dark"]
+{
+    --body-background: #151515;
+    --body-card-background: #212121;
+    --body-text: #FFFFFF;
+    --body-text-subtle: #CCCCCC;
+    --body-text-light: #777777;
+
+    --footer-background: #151515;
+
+    --outline-color: rgba(255, 255, 255, 0.1);
+}
+
+*
+{
+    font-family: "Assistant";
+}
+
+html, body
+{
+    height: 100%;
+}
+
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-width: 1200px;
+
+    background-color: var(--body-background);
+}
+
+a
+{
+    color: var(--body-link);
+}
+
+.everything-container
+{
+    flex: 1 0 auto;
+}
+
+.content-container
+{
+    margin: auto;
+
+    max-width: 1200px;
+}
+
+.page-heading
+{
+    margin-top: 1em;
+
+    font-size: 32px;
+    text-align: center;
+
+    color: var(--body-text);
+}

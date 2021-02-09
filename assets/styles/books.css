@@ -1,0 +1,124 @@
+.book-container
+{
+    display: flex;
+
+    margin: auto;
+    margin-top: 4em;
+    padding: 2em 0;
+
+    width: 90%;
+
+    /*background-color: var(--body-card-background);
+    border: 1px solid var(--outline-color);*/
+}
+
+.book-image-container
+{
+    display: inline-flex;
+    flex-shrink: 0;
+}
+
+.book-image-box
+{
+    float: left;
+
+    margin-left: 4em;
+}
+
+.book-image
+{
+    height: 30em;
+
+    box-shadow: 0 0 4px 2px var(--shadow-color);
+}
+
+.book-text-container
+{
+    flex: 1;
+    
+    padding: 0 4em;
+}
+
+.book-title
+{
+    margin: 0;
+
+    font-size: 32px;
+
+    color: var(--body-text);
+}
+
+.book-date
+{
+    margin: 0;
+
+    font-size: 16px;
+
+    color: var(--body-text-light);
+}
+
+.book-series
+{
+    margin: 0;
+
+    font-size: 16px;
+
+    color: var(--body-text-light);
+}
+
+.book-text-separator
+{
+    margin-bottom: 1em;
+
+    border-bottom: 1px solid #AAAAAA;
+}
+
+.book-description
+{
+    font-size: 18px;
+    line-height: 32px;
+
+    color: var(--body-text-subtle);
+}
+
+.mini-books-container
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin-top: 4em;
+}
+
+.mini-book
+{
+    margin: 0 2em;
+
+    text-align: center;
+}
+
+.mini-book-image
+{
+    max-height: 20em;
+
+    box-shadow: 0 0 4px 1px var(--shadow-color);
+}
+
+.mini-book-title
+{
+    margin-top: 1em;
+
+    font-size: 20px;
+}
+
+.mini-book-title-link
+{
+    text-decoration: none;
+
+    color: var(--link);
+}
+
+.mini-book-title-link:hover
+{
+    color: var(--link-hover);
+}
