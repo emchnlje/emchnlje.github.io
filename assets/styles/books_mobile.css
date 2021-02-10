@@ -1,0 +1,26 @@
+@import "books.css";
+
+.book-container
+{
+	flex-direction: column;
+
+	margin-top: 2vh;
+}
+
+.book-image-box
+{
+	margin: auto;
+}
+
+.book-text-container
+{
+	padding: 0;
+	padding-top: 2vh;
+
+	text-align: center;
+}
+
+.book-description
+{
+	text-align: left;
+}

@@ -1,0 +1,22 @@
+.force-underline
+{
+	text-decoration-thickness: 0.05em;
+	text-underline-offset: 0.25em;
+}
+
+.navbar-logo
+{
+	height: 6vh;
+
+	margin-left: 0;
+}
+
+.navbar .container
+{
+	max-width: 100vw;
+}
+
+#nav-item-container
+{
+	text-align: right;
+}

@@ -1,0 +1,18 @@
+@import "main.css";
+@import "blog_post_mobile.css";
+@import "books_mobile.css";
+@import "footer_mobile.css";
+@import "navigation_bar_mobile.css";
+
+html, body
+{
+	width: 100vw;
+	height: 100vh;
+
+	min-width: 0;
+}
+
+.page-heading
+{
+	font-size: 1.5rem;
+}

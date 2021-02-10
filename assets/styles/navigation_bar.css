@@ -50,3 +50,13 @@
     width: auto;
     max-height: 2em;
 }
+
+.flex-filler
+{
+    flex-grow: 1;
+}
+
+#navbar-nav
+{
+    flex-grow: 0;
+}

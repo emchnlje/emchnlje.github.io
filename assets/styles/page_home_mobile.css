@@ -1,0 +1,11 @@
+@import "page_blog_mobile.css";
+
+.content-row-1
+{
+	flex-direction: column;
+}
+
+.blog-archive-link
+{
+	font-size: 1rem;
+}

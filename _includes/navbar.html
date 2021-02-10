@@ -1,14 +1,20 @@
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
 	<div class="container">
+		<!-- Logo -->
+		<ul class="navbar-nav" id="nav-logo-container">
+			<img class="navbar-logo" id="navbar-logo" src="/assets/images/logo_placeholder.png">
+		</ul>
+
+		<div class="flex-filler"></div>
+
+		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar-nav" aria-controls="navbar-nav" aria-expanded="false" aria-label="Toggle navigation">
+			<span class="navbar-toggler-icon"></span>
+		</button>
+
 		<!-- Div puts nav items in a hamburger menu on mobile -->
 		<div class="collapse navbar-collapse" id="navbar-nav">
-			<!-- Logo -->
-			<ul class="navbar-nav me-auto" id="nav-logo-container">
-				<img class="navbar-logo" id="navbar-logo" src="/assets/images/logo_placeholder.png">
-			</ul>
-
 			<!-- Links -->
-			<ul class="navbar-nav ms-auto" id="nav-item-container">
+			<ul class="navbar-nav" id="nav-item-container">
 				<!-- Home -->
 				<li class="nav-item">
 					<a class="nav-link" href="/">Home</a>

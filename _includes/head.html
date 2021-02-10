@@ -1,23 +1,31 @@
 <head>
 	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="viewport" content="width=​device-width, initial-scale=1.0, shrink-to-fit=no, viewport-fit=cover">
 
 	<meta name="navbar-name" content="{{ page.navbar-name }}">
 
 	{%- seo -%}
 
 	<!-- Bootstrap -->
-	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
-	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous">
 
 	<!-- Google fonts -->
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Assistant:wght@200;300;400;500;600;700;800&display=swap" rel="stylesheet">
 
 	<!-- Local stylesheets -->
-	<link rel="stylesheet" href="/assets/styles/main.css">
+	<script src="/assets/scripts/style_chooser.js"></script>
+
+	<!--link rel="stylesheet" href="/assets/styles/main.css"-->
+	<script>
+		chooseStyleFile("main");
+	</script>
+
 	{% if page.stylesheetName %}
-		<link rel="stylesheet" href="/assets/styles/{{ page.stylesheetName }}.css">
+		<!--link rel="stylesheet" href="/assets/styles/{{ page.stylesheetName }}.css"-->
+		<script>
+			chooseStyleFile("{{ page.stylesheetName }}");
+		</script>
 	{% endif %}
 
 	{%- feed_meta -%}
