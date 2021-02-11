@@ -31,6 +31,10 @@
 
 		<div class="book-text-separator"></div>
 		
-		<a class="book-link" href="{{ the_book.link_temp }}" target="_blank">[ Purchase on Amazon ]</a>
+		{% if the_book.link_temp %}
+			<a class="book-link" href="{{ the_book.link_temp }}" target="_blank">[ Purchase on Amazon ]</a>
+		{% else %}
+			<a class="book-link">[ Coming Soon ]</a>
+		{% endif %}
 	</div>
 </div>

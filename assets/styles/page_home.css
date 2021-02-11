@@ -17,6 +17,11 @@
 	flex-grow: 1;
 }
 
+.welcome-image
+{
+	width: 10em;
+}
+
 .blog-entry-preview
 {
 	font-size: 1rem;

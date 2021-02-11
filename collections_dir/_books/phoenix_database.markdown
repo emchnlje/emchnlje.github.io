@@ -2,7 +2,7 @@
 layout: book
 title: Phoenix Database
 title_id: phoenix_database
-release_date: 2021-02-07
+release_date: 2021-02-12
 subtitle: "The Phoenix Apocalypse Series: Book 1"
 series_id: the_phoenix_apocalypse_series
 book_number: 1

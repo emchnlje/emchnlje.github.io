@@ -1,0 +1,14 @@
+---
+layout: post
+title: "Welcome"
+date: 2021-02-11 10:08:00
+author: "Jonathan Vernon"
+---
+
+Welcome to the official website of Ernest C. Nichols. Here you will be able to stay updated on the newest releases via the blog posts on the home page. You can also visit the books page to view information about releases, such as the series, release date, and where to buy it.
+
+You can contact Ernest C. Nichols at <contact@erchnichols.com>. If you have a question or feedback related to the website itself, please contact me at <contact@jvernon.net>.
+
+Thank you for your visit. We hope you enjoy reading Phoenix Database!
+
+\- Jonathan Vernon
