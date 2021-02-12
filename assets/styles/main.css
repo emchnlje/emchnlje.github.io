@@ -54,7 +54,6 @@ body
 {
     display: flex;
     flex-direction: column;
-    min-width: 1200px;
 
     background-color: var(--body-background);
 }
@@ -73,6 +72,7 @@ a
 {
     margin: auto;
 
+	min-width: 1200px;
     max-width: 1200px;
 }
 

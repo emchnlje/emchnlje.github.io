@@ -14,7 +14,6 @@
 .navbar
 {
     background-color: var(--navbar-background) !important;
-    /*border-bottom: 1px solid var(--outline-color);*/
     box-shadow: 0 0 4px 2px var(--shadow-color);
 }
 
@@ -59,4 +58,16 @@
 #navbar-nav
 {
     flex-grow: 0;
+}
+
+.navbar-toggler
+{
+	border: none;
+}
+
+.bi-list
+{
+	font-size: 32px;
+
+	color: var(--navbar-link);
 }
